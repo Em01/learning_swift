@@ -4,20 +4,17 @@ import UIKit
 
 println("Swift Functions")
 
-func calculateArea() {
-let height = 12
-let width = 10
-let area = height * width
-println("The area of the room is \(area)")
+func calculateArea(height: Int, width: Int) -> Int {
+    return height * width
 }
 
 
-calculateArea()
+let area = calculateArea(19, 120)
+println("Area = \(calculateArea(10, 12))")
 
-
-
-
-func greeting() {
-    println ("Hello")
+func greeting(person: String) {
+    println("Hello\(Tom)")
 }
 
+
+greeting("Tom")
